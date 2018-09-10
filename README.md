@@ -15,7 +15,7 @@ This code is an upgrade from Ionic2 to Ionic3
 
 You can find the original code here : https://github.com/doorty/Ionic-2-Uber
 
-Ionic 2  app tutorial : https://www.youtube.com/watch?v=iFybpBFgi08&list=PLIQQPtwzejqVguZj5DYrO1w0QbNSJWmT
+Ionic 2  app tutorial : https://www.youtube.com/playlist?list=PLIQQPtwzejqVguZj5DYrO1w0QbNSJWmT-
 
 
 
