@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable'
+import { Observable } from 'rxjs/Observable';
 declare var google : any;
 
 @Injectable()
@@ -72,7 +72,7 @@ export class SimulateService {
 
 
   calculateRoute(start, end){
-    
+    console.log("calculating routes");
     return new Observable(observable => {
       this.directionsService.route({
         origin: start,
@@ -140,15 +140,15 @@ export class SimulateService {
     cars :[{
       id:1,
       coord:{
-        lat:35.755242,
-        lng:-5.840036
+        lat:30.705353,
+        lng:76.763227
       }
     },
     {
       id:2,
       coord:{
-        lat:35.752926,
-        lng:-5.842011
+        lat:30.705667,
+        lng:76.763753
       }
     }]
   };
@@ -157,15 +157,15 @@ export class SimulateService {
     cars :[{
       id:1,
       coord:{
-        lat:35.755259,
-        lng:-5.833063
+        lat:30.706073,
+        lng:76.764696
       }
     },
     {
       id:2,
       coord:{
-        lat:35.757592,
-        lng:-5.836196
+        lat:30.706931,
+        lng:76.766112
       }
     }]
   };
@@ -174,15 +174,15 @@ export class SimulateService {
     cars :[{
       id:1,
       coord:{
-        lat:35.755638,
-        lng:-5.837514
+        lat:30.704615,
+        lng:76.762466
       }
     },
     {
       id:2,
       coord:{
-        lat:35.755185,
-        lng:-5.839992
+        lat:30.703961,
+        lng:76.761200
       }
     }]
   };
@@ -191,15 +191,15 @@ export class SimulateService {
     cars :[{
       id:1,
       coord:{
-        lat:35.757919,
-        lng:-5.839477
+        lat:30.703139,
+        lng:76.760031
       }
     },
     {
       id:2,
       coord:{
-        lat:35.753334,
-        lng:-5.838591
+        lat:30.702152,
+        lng:76.758487
       }
     }]
   };
@@ -208,15 +208,15 @@ export class SimulateService {
     cars :[{
       id:1,
       coord:{
-        lat:35.752285,
-        lng:-5.844345
+        lat:30.703324,
+        lng:76.762326
       }
     },
     {
       id:2,
       coord:{
-        lat:35.755272,
-        lng:-5.840075
+        lat:30.703296,
+        lng:76.763227
       }
     }]
   };

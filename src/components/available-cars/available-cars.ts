@@ -1,6 +1,6 @@
-import { Component, Input, OnInit, OnChanges } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import * as SlidingMarker from 'marker-animate-unobtrusive';
 import { CarService } from '../../providers/car/car';
-import * as SlidingMarker  from 'marker-animate-unobtrusive';
 declare var google : any;
 
 @Component({

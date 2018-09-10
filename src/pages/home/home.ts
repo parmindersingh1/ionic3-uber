@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AlertController } from 'ionic-angular';
-import { MapsComponent } from '../../components/maps/maps';
 import { PickupPubSubService } from '../../providers/pickup-pub-sub/pickup-pub-sub';
 
 @Component({

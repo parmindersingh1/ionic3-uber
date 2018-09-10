@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { LoadingController, NavController } from 'ionic-angular'
+import { Component, Input, OnInit } from '@angular/core';
 import { Geolocation } from '@ionic-native/geolocation';
-import { Observable } from 'rxjs/Observable'
+import { LoadingController } from 'ionic-angular';
+import { Observable } from 'rxjs/Observable';
 declare var google : any;
 
 @Component({
@@ -43,6 +43,7 @@ export class MapsComponent implements OnInit{
     google.maps.event.addListener(this.map, 'idle', () => {
       this.isMapIdle = true;
     })
+    
   }
 
 

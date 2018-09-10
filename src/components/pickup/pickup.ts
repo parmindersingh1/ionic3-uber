@@ -1,6 +1,5 @@
-import { Component, Input, OnChanges, Output, EventEmitter, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output } from '@angular/core';
 import { PickupPubSubService } from '../../providers/pickup-pub-sub/pickup-pub-sub';
-import { Observable } from 'rxjs/Observable';
 
 declare var google : any;
 
@@ -29,7 +28,7 @@ export class PickupComponent implements OnInit, OnChanges {
       if(e.event === this.pickupPubSubService.EVENTS.ARRIVAL_TIME){
         this.updateTime(e.data);
       }
-    })
+    })    
   }
 
   ngOnChanges(changes){
@@ -56,7 +55,7 @@ export class PickupComponent implements OnInit, OnChanges {
   showPickupMarker(){
 
     this.hidePickupMarker();
-
+    console.log("setting marker", this.map);
     this.pickupMarker =  new google.maps.Marker({
       map : this.map,
       animation : google.maps.Animation.BOUNCE,
